@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user</title>
+</head>
+<link href="css/guide.css" rel="stylesheet" type="text/css">
+<link href="css/zhuCe.css" rel="stylesheet" type="text/css">
+<link href="css/scrollBox.css" rel="stylesheet" type="text/css">
+<link href="css/font.css" rel="stylesheet" type="text/css">
+<link href="css/message.css" rel="stylesheet" type="text/css">
+<link href="css/a_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/animate.js"></script>
+<script type="text/javascript" src="js/changeSrc.js"></script>
+<script type="text/javascript" src="js/animate_mouse.js"></script>
+<script type="text/javascript" src="js/message.js"></script>
+<script type="text/javascript" src="js/reg.js"></script>
+<script type="text/javascript" src="js/guide.js"></script>
+<script defer type="text/javascript" src="js/zhuCe.js"></script>
+<body id="body">
+<div class="daoHang" onmousedown="return false;">
+    <div class="break"></div>
+    <div class="breakHover"><img class="logo scrollImg_bounce" style="--t:1.1" id="logo" src="images/logo.png" alt="logo">
+        </div>
+    <table id="svgTable">
+        <tr>
+            <td><a href="./zhuCe.html">
+                <div class="svgBox">
+                    <img class="scrollText_scl" style="--t:1.1" src="images/svg/user.svg" data-name="1" alt="">
+                </div>
+            </a>
+            </td>
+            <td>
+                <a href="index.html">
+                <div class="svgBox">
+                    <img class="scrollText_scl" style="--t:1.1" src="images/svg/home%201-fill.svg" data-name="2" alt="">
+                </div>
+                </a>
+            </td>
+            <td>
+                <div class="svgBox">
+                    <img class="scrollText_scl" style="--t:1.1" src="images/svg/menu.svg" data-name="3" alt="">
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="menuHover" id="menuHover" >
+    <ul class="scrollText_scl">
+        <li class="menuLi"><span>人工智能历史</span>
+            <ul hidden>
+                <li><a href="./AIHistory.html#introBox1"><span>梦的开始</span></a></li>
+                <li><a href="./AIHistory.html#introBox2"><span>黄金时代</span></a></li>
+                <li><a href="./AIHistory.html#introBox3"><span>第一次AI寒冬</span></a></li>
+                <li><a href="./AIHistory.html#introBox4"><span>应用发展</span></a></li>
+                <li><a href="./AIHistory.html#introBox5"><span>第二次AI寒冬</span></a></li>
+                <li><a href="./AIHistory.html#introBox6"><span>稳健发展</span></a></li>
+                <li><a href="./AIHistory.html#introBox7"><span>新时代</span></a></li>
+            </ul>
+        </li>
+        <li class="menuLi"><span>人工智能介绍</span>
+            <ul hidden>
+                <li data-w="0"><a href="./AIUse.html"><span>人工智能的f(x)=y</span></a></li>
+                <li data-w="1"><a href="./AIUse.html"><span>知识表示</span></a></li>
+                <li data-w="2"><a href="./AIUse.html"><span>搜索策略</span></a></li>
+                <li data-w="3"><a href="./AIUse.html"><span>机器学习与KNN</span></a></li>
+                <li data-w="4"><a href="./AIUse.html"><span>深度学习与神经网络</span></a></li>
+                <li data-w="5"><a href="./AIUse.html"><span>计算机视觉、听觉</span></a></li>
+                <li data-w="6"><a href="./AIUse.html"><span>自然语言处理</span></a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="errorBox"></div>
+<div id="userBox" class="scrollText_scl" style="--t:1.1">
+    <div id="title"></div>
+    <div id="login" class="scrollBox_changeX start" style="--t:1.1">
+        <form id="loginForm">
+            <label for="l1">
+            <span class="userText" onmousedown="return false;">用户名</span><br>
+            </label>
+            <input type="text" name="username" id="l1" required maxlength="10">
+            <label for="l2">
+            <span class="userText" onmousedown="return false;">密码</span><br>
+            </label>
+            <input type="text" name="password" id="l2" required>
+            <input type="submit" value="确定" class="submit">
+            <input type="reset" value="重置" class="submit">
+        </form>
+    </div>
+        <span id="boxChange" onmousedown="return false;"><u>转至注册</u></span>
+    <div id="register" class="scrollBox_changeX" style="--t:1.1">
+        <form id="registerForm">
+            <label for="r1">
+                <span class="userText" onmousedown="return false;">用户名</span><br>
+            </label>
+            <input type="text" name="username" id="r1" disabled required maxlength="10">
+            <label for="r2">
+                <span class="userText" onmousedown="return false;">密码</span><br>
+            </label>
+            <input type="text" name="password" id="r2" disabled required>
+            <div id="security">安全等级：弱</div>
+            <label for="r3">
+                <span class="userText" onmousedown="return false;">确认密码</span><br>
+            </label>
+            <input type="text" name="password" id="r3" disabled required>
+            <input type="submit" value="确定" class="submit">
+            <input type="reset" value="重置" class="submit">
+        </form>
+<!--        <span class="boxChange"><u>转至登入</u></span>-->
+    </div>
+<div id="userHover">
+</div>
+</div>
+<svg width="0" height="0">
+    <clipPath id="svg2">
+        <text x="75" y="80" font-size="25px" font-weight="900" stroke="black" font-family="lxgw-r">人工智能</text>
+    </clipPath>
+</svg>
+<svg width="0" height="0">
+    <clipPath id="svg3">
+        <text id="svgText" x="50" y="40" text-anchor="middle" font-size="35px" font-weight="900" stroke="black" font-family="lxgw-b">登入</text>
+    </clipPath>
+</svg>
+</body>
+</html>
